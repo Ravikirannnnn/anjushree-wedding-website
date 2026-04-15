@@ -1,7 +1,7 @@
 import "./CoupleSection.css";
 import Backround from '../assets/blue-border.png'
 import Male from '../assets/Anjusree/Groom.jpeg'
-import Female from '../assets/Anjusree/bride.jpeg'
+import Female from '../assets/Anjusree/Bride.jpeg'
 import fb from '../assets/Fb.png'
 import insta from '../assets/Insta.png'
 
