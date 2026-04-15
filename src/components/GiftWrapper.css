@@ -1,0 +1,263 @@
+.gift-wrapper-container {
+  position: fixed;
+  inset: 0;
+
+  /* Elegant wedding background */
+  background: radial-gradient(circle at center, #e3e3fd, #b2a9f5, #837ae6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* subtle background glow */
+.gift-wrapper-container::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
+  filter: blur(60px);
+  animation: glowMove 6s ease-in-out infinite alternate;
+}
+
+@keyframes glowMove {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.gift-content {
+  text-align: center;
+  position: relative;
+}
+
+.gift-heading {
+  font-family: "Georgia", serif;
+  font-size: 1.7rem;
+  color: #00087a;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  animation: fadeInText 1s ease-in-out;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gift-box-wrapper {
+  width: 240px;
+  height: 240px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  perspective: 800px;
+}
+
+/* Hover feel */
+.gift-box-wrapper:hover {
+  transform: scale(1.05);
+}
+
+/* Gift halves */
+.gift-half {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+
+  /* realistic gradient */
+  background: linear-gradient(
+    145deg,
+    #4f67ff,
+    #1b2bd8,
+    #4d0bb7
+  );
+
+  border-radius: 14px;
+
+  box-shadow:
+    inset -6px -6px 12px rgba(0, 0, 0, 0.2),
+    inset 6px 6px 12px rgba(255, 255, 255, 0.3),
+    0 10px 24px rgba(0, 0, 0, 0.25);
+
+  transition: transform 1s ease-in-out;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+/* Ribbon */
+
+.ribbon-horizontal,
+.ribbon-vertical,
+.ribbon-bow {
+  position: absolute;
+  z-index: 3;
+  transition: all 0.6s ease-in-out;
+}
+
+/* golden ribbon gradient */
+.ribbon-horizontal {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 16px;
+
+  background: linear-gradient(
+    to right,
+    #ffd700,
+    #ffb300,
+    #ffd700
+  );
+
+  transform: translateY(-50%);
+  border-radius: 6px;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.25),
+    inset 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.ribbon-vertical {
+  top: 0;
+  left: 50%;
+  width: 16px;
+  height: 100%;
+
+  background: linear-gradient(
+    to bottom,
+    #ffd700,
+    #ffb300,
+    #ffd700
+  );
+
+  transform: translateX(-50%);
+  border-radius: 6px;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.25),
+    inset 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* Bow */
+
+.ribbon-bow {
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+
+  background: radial-gradient(
+    circle,
+    #ffd700,
+    #ffb300
+  );
+
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+
+  box-shadow:
+    0 0 10px rgba(255, 215, 0, 0.8),
+    inset 0 0 6px rgba(255, 255, 255, 0.7);
+
+  animation: pulseBow 1.3s infinite;
+}
+
+/* pulse animation */
+
+@keyframes pulseBow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow:
+      0 0 10px rgba(255, 215, 0, 0.7);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+    box-shadow:
+      0 0 18px rgba(255, 215, 0, 1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow:
+      0 0 10px rgba(255, 215, 0, 0.7);
+  }
+}
+
+/* Ribbon disappear */
+
+.ribbonOpen .ribbon-horizontal,
+.ribbonOpen .ribbon-vertical,
+.ribbonOpen .ribbon-bow {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Box split animation */
+
+.boxSplit .left {
+  transform: translateX(-160%) rotateZ(-18deg);
+}
+
+.boxSplit .right {
+  transform: translateX(160%) rotateZ(18deg);
+}
+
+/* floating sparkle effect */
+
+.petal-effect {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* optional sparkle dots */
+
+.petal-effect::before,
+.petal-effect::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: gold;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: floatSparkle 4s linear infinite;
+}
+
+.petal-effect::after {
+  left: 70%;
+  animation-delay: 2s;
+}
+
+@keyframes floatSparkle {
+  from {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+
+  to {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+}

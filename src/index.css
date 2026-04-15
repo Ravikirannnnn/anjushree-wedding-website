@@ -1,0 +1,34 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background:  #e9e1ff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color:   #0b1f5b;
+}
+/*  */
+section {
+  padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+}
+
+@font-face {
+  font-family: "Allura-Regular";
+  src: local("Allura-Regular"),
+   url("./Fonts/Allura/Allura-Regular.ttf") format("truetype");
+  /* font-weight: bold; */
+ }
+ @font-face {
+  font-family: "Comfortaa";
+  src: local("Comfortaa"),
+   url("./Fonts/Comfortaa//Comfortaa-VariableFont_wght.ttf") format("truetype");
+  /* font-weight: bold; */
+ }

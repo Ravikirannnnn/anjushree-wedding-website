@@ -1,0 +1,46 @@
+.quickball {
+  position: fixed;
+  right: 15px;
+  bottom: 25px;
+  width: 55px;
+  height: 55px;
+  background: radial-gradient(circle at top left, #192089, #3a337b, #2f1be4);
+  color: white;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(133, 105, 255, 0.6), 0 0 30px rgba(189, 180, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  animation: float 2.8s ease-in-out infinite, glowPulse 2s ease-in-out infinite;
+}
+
+.quickball:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(154, 161, 255, 0.9), 0 0 45px rgba(145, 105, 255, 0.8);
+}
+
+.quickball:active {
+  transform: scale(0.95);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px #bc9aff, 0 0 20px #d2c4fa;
+  }
+  50% {
+    box-shadow: 0 0 20px #c5c2fb, 0 0 40px #ba9aff;
+  }
+  100% {
+    box-shadow: 0 0 10px #9c9aff, 0 0 20px #ccc4fa;
+  }
+}

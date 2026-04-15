@@ -1,0 +1,155 @@
+.countdown {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+  background: #e9e1ff;
+  border-radius: 10px;
+}
+.countdown h2{
+  color: #0b1f5b;
+  font-family: "Comfortaa";
+  font-size: 40px;
+}
+.countdown h3{
+  font-family: "Allura-Regular";
+  font-size: 36px;
+  color: #4D4D4D; 
+  margin-bottom: 0 !important;
+}
+.countdown p{
+  font-family: "Comfortaa";
+  font-size: 12px;
+  line-height: 20px;
+  color: gray;
+  margin:30px !important;
+  margin-bottom: 60px !important;
+}
+.countdown h1{
+  font-family: "Comfortaa";
+  font-size: 30px;
+  /* color: #808080; */
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.border{
+  width: 75%;
+  height: 50%;
+  margin: 40px;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+  .tile__img {
+	max-width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	text-align: center;
+	height: auto;
+	object-fit: cover;
+  }
+.timer span {
+  display: flex;
+  flex-direction:column !important;
+  justify-content: center;
+  gap: 9px;
+  font-family: "Comfortaa";
+  font-size: 40px;
+  font-weight:400;
+  background: white;
+  color: #0b1f5b;
+  width: 50px;
+  height:80px;
+  padding: 20px 20px;
+  border-radius: 50% 0 50% 0;;
+  box-shadow: 0 0 15px rgba(11, 37, 183, 0.485);
+}
+.timer h5{
+  margin-top: 10px !important;
+  margin: 0 !important;
+  font-size: 24px;
+  
+}
+.lePushReleaseFrom {
+  display: inline-block; /* Ensures transform works properly */
+  animation: lePushReleaseFrom 0.8s ease-out forwards;
+}
+
+@keyframes lePushReleaseFrom {
+  from {
+    transform: scale(3, 3);
+    opacity: 0;
+  }
+  50% { 
+    transform: scale(0.5, 0.5);
+    opacity: 1; /* Ensures it becomes visible */
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .timer {
+    flex-direction: column;
+    gap: 10px;
+  } */
+  .border{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 0 !important;
+    margin-right: 0  !important;
+  }
+}
+
+@media (max-width:500px) {
+  .countdown h2{
+    font-size: 26px;
+  }
+    .tile__img {
+	max-width: 100% !important;
+	text-align: center;
+	height: auto;
+	object-fit: cover;
+  }
+  .countdown h3{
+    font-size: 33px;
+  }
+  .countdown h1{
+    font-size: 26px;
+  }
+  .timer span {
+    gap: 9px;
+    font-size: 30px;
+    width: 30px;
+  }
+  .timer h5{
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .timer {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .countdown {
+    padding: 20px 10px;
+  }
+  .border{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 0 !important;
+    margin-right: 0  !important;
+  }
+}

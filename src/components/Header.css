@@ -1,0 +1,193 @@
+/* .hero-section {
+  background-image: url("/assets/fahmi-ramadhan-WvFKZKzOTEM-unsplash 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 2%;
+} */
+.hero-section {
+  position: relative;
+  background-image: url("/assets/fahmi-ramadhan-WvFKZKzOTEM-unsplash 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* light black overlay */
+  z-index: -1;
+}
+
+.ganesh img{
+  width: 100px;
+  height: 100px;
+}
+.hero-section:hover{
+  filter: gradiant(100%);
+}
+.overlay {
+  /* background: rgba(0, 0, 0, 0.5); Dark overlay */
+  display: flex;
+  flex-direction: column;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  border-radius: 10px;
+}
+.overlay h1{
+  font-family: "Allura-Regular";
+  color: white;
+  font-size: 120px;
+  font-weight: 400;
+  /* margin: 0 !important; */
+}
+.overlay h2{
+  font-family: "Comfortaa";
+  font-size: 40px;
+  color: white;
+  font-weight: 400;
+}
+
+.overlay h5{
+  font-family: "Comfortaa";
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  margin: 10px;
+}
+.leScaleYIn {
+  display: inline-block; /* Ensures proper transform effects */
+  animation: leScaleYIn 0.8s ease-out forwards;
+}
+
+@keyframes leScaleYIn {
+  from {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+
+.overlay p{
+  font-family: "Comfortaa";
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.leaf-l,.leaf-r{
+  width: 50px;
+}
+.leaf-l{
+  transform: scaleX(-1);
+}
+.dot{
+  font-size: 70px;
+}
+
+@media (max-width: 1100px) {
+  .hero-section {
+    height: 120vh;
+  }
+ 
+  .overlay h1{
+    font-size: 70px;
+  }
+  .overlay h2{
+    font-size: 34px;
+  }
+  .overlay h5{
+    font-size: 18px;
+  }
+  .overlay p{
+    font-size: 29px;
+  }
+  .leaf-l,.leaf-r{
+    width: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 120vh;
+  }
+ 
+  .overlay h1{
+    font-size: 60px;
+  }
+  .overlay h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+  }
+  .overlay h5{
+    font-size: 16px;
+  }
+  .overlay p{
+    font-size: 26px;
+  }
+  .leaf-l,.leaf-r{
+    width: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-section {
+    height: 100%;
+    padding-top: 15%;
+    padding-bottom: 3%;
+  }
+  .ganesh img{
+    width: 80px;
+    height: 80px;
+  }
+  .overlay h1{
+    font-size: 50px;
+  }
+  .overlay h2{
+    font-size: 18px;
+  }
+  .overlay h5{
+    font-size: 14px;
+  }
+  .overlay p{
+    font-size: 22px;
+  }
+  .leaf-l,.leaf-r{
+    width: 20px;
+  }
+}

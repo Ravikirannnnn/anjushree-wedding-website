@@ -1,0 +1,40 @@
+.map-container {
+  padding: 40px 20px;
+  /* width: 70%; */
+  /* margin-bottom: 10%; */
+}
+
+.map-container iframe {
+  border-radius: 30px !important;
+}
+.border-map{
+  width: 75%;
+  height: 50%;
+  margin: 40px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    padding: 20px;
+  }
+  .border-map{
+    width: 100%;
+    height: 100% !important;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 0 !important;
+    margin-right: 0  !important;
+  }
+}
+
+@media (max-width:500px) {
+  .border-map{
+    width: 100%;
+    height: 100% !important;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 0 !important;
+    margin-right: 0  !important;
+  }
+}

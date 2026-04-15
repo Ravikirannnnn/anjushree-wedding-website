@@ -1,0 +1,23 @@
+.wrapper section {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.wrapper section::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper section .item {
+  min-width: 180px;
+  flex-shrink: 0;
+}
+
+.wrapper section .item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}

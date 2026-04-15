@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #0b1f5b;
+  color: rgb(255, 255, 255);
+  /* margin-top:1%; */
+
+}
+.footer p{
+  font-family: "Comfortaa";
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    /* padding: 15px; */
+  }
+}
+
+.dev {
+  cursor: pointer; /* Adjust the hotspot */
+}

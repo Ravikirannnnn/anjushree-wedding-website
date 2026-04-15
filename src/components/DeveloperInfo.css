@@ -1,0 +1,146 @@
+.developer-info-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.developer-info {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
+  color: white;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.developer-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+
+.developer-title {
+  font-size: 32px !important;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Allura-Regular";
+
+}
+
+.developer-name {
+  font-family: "Comfortaa";
+  font-size: 24px !important;
+  font-weight: 600;
+  margin-bottom: 10px;
+  /* color: #f4cdff; */
+  color: #ffffff;
+
+}
+
+.developer-bio {
+  font-size: 14px !important;
+  margin-bottom: 10px;
+  font-family: "Comfortaa";
+
+}
+
+.developer-contact {
+  font-size: 14px !important;
+  /* font-style: italic; */
+  margin-bottom: 20px;
+}
+.email-link {
+  text-decoration: none;
+  font-weight:lighter;
+  color: #fff;
+  font-family: "Comfortaa";
+
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.close-btn {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.close-btn:hover {
+  background: red;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width:500px) {
+  .developer-title {
+    font-size: 28px !important;
+    font-weight: 400;
+  
+  }
+  .developer-info {
+    max-width: 250px;
+  }
+  .developer-name {
+    font-family: "Comfortaa";
+    font-size: 20px !important;
+  }
+  
+  .developer-bio {
+    font-size: 12px !important;
+  }
+  
+  .developer-contact {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width:500px) {
+  .developer-info {
+    max-width: 200px;
+  }
+}
