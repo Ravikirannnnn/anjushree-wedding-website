@@ -1,7 +1,7 @@
 import "./Header.css";
 import "./Header.css"
 import weddingBg from "../assets/Anjusree/HeroBg.jpeg";
-import weddingBgMob from "../assets/Anjusree/traditional.jpeg"
+import weddingBgMob from "../assets/Anjusree/img2.jpeg"
 import leaf from "../assets/leaf.png"
 import ganesh from "../assets/ganeshw.png"
 import Confetti from "react-confetti";
