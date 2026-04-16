@@ -1,0 +1,160 @@
+/* WeddingInvitationDownloadSection.css */
+
+.invitation-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitation-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+
+}
+
+.invitation-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-family: "Comfortaa";
+
+}
+
+.couple-names {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-family:"Allura-Regular";
+  margin-bottom: 40px;
+
+}
+
+.heart {
+  margin-left: 10px;
+  color: #1d1785;
+}
+
+
+
+.invitation-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ffe4e6;
+}
+
+.download-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1c1684, #4e3ff4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 20px auto;
+}
+
+.card-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-family: "Comfortaa";
+
+}
+
+.card-text {
+  font-size: 16px;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto 28px auto;
+  line-height: 1.6;
+  font-family: "Comfortaa";
+
+}
+
+.download-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #15178f, #3f48f4);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: "Comfortaa";
+
+}
+
+.download-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(29, 45, 225, 0.3);
+}
+
+.decorative-line {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.decorative-line span {
+  width: 60px;
+  height: 1px;
+  background: #aaa4fd;
+}
+
+.small-heart {
+  color: #181062;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .invitation-section {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .invitation-title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+.invitation-container {
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+.card-title {
+  font-size: 20px;
+  line-height: 36px;
+
+}.card-text {
+  font-size: 14px;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto 28px auto;
+  line-height: 1.6;
+  font-family: "Comfortaa";
+
+}
+  .couple-names {
+    font-size: 22px;
+  }
+
+  .invitation-card {
+    padding: 30px 20px;
+  }
+  .download-button {
+  font-size: 14px;
+  line-height: 28px;
+
+}
+}

@@ -13,8 +13,9 @@ import Footer2 from "./components/Footer2";
 import GiftWrapper from "./components/GiftWrapper";
 import audio from "../src/assets/audio.mp3";
 import "./App.css";
-import ImageSlide from "./components/ImageSlide";
+// import ImageSlide from "./components/ImageSlide";
 import WeddingGallery from "./components/WeddingGallery";
+import WeddingInvitationDownloadSection from "./components/InvitationDownloadSection";
 
 function App() {
   const audioRef = useRef(null);
@@ -126,6 +127,11 @@ function App() {
           <CountdownTimer />
           <EventDetails />
           {/* <Gallery /> */}
+          <WeddingInvitationDownloadSection
+  pdfUrl="/inviatation.jpeg"
+  coupleNames="Manoj & Anjushree"
+  weddingDate="12 December 2026"
+/>
           <WeddingGallery/>
           <MapSection />
           {/* <ImageSlide/> */}
