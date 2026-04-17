@@ -14,9 +14,10 @@
 } */
 .hero-section {
   position: relative;
-  background-image: url("/assets/fahmi-ramadhan-WvFKZKzOTEM-unsplash 1.png");
-  background-size: cover;
-  background-position: center;
+  /* background-image: url("/assets/fahmi-ramadhan-WvFKZKzOTEM-unsplash 1.png"); */
+  background-size: contain;
+  background-position: top ;
+   background-size: 90% 10%;
   background-repeat: no-repeat;
   height: 110vh;
   display: flex;
@@ -36,7 +37,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* light black overlay */
+  /* background-color: rgba(0, 0, 0, 0.4); light black overlay */
   z-index: -1;
 }
 

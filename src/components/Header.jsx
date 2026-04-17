@@ -1,7 +1,7 @@
 import "./Header.css";
 import "./Header.css"
-import weddingBg from "../assets/Anjusree/HeroBg.jpeg";
-import weddingBgMob from "../assets/Anjusree/img2.jpeg"
+import weddingBg from "../assets/Anjusree/pngtop.png";
+import weddingBgMob from "../assets/Anjusree/pngtop.png"
 import leaf from "../assets/leaf.png"
 import ganesh from "../assets/ganeshw.png"
 import Confetti from "react-confetti";
@@ -43,7 +43,8 @@ const Header = ({showConfetti}) => {
     <>
     {bgImage || bgImageMob?
     <header className="hero-section"
-    style={{backgroundImage:isMobile ? `url(${bgImageMob})`:`url(${bgImage})`}}>
+    style={{backgroundImage:isMobile ? `url(${bgImageMob})`:``}}
+    >
       <div className="overlay">
       {showConfetti && (
                 <Confetti

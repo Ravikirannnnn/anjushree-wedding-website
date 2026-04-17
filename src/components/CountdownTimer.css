@@ -5,25 +5,25 @@
   flex-direction: column;
   text-align: center;
   padding: 40px 20px;
-  background: #e9e1ff;
+  /* background: #e9e1ff; */
   border-radius: 10px;
 }
 .countdown h2{
-  color: #0b1f5b;
+  color: #ffffff;
   font-family: "Comfortaa";
   font-size: 40px;
 }
 .countdown h3{
   font-family: "Allura-Regular";
   font-size: 36px;
-  color: #4D4D4D; 
+  color: #b8ebaf; 
   margin-bottom: 0 !important;
 }
 .countdown p{
   font-family: "Comfortaa";
   font-size: 12px;
   line-height: 20px;
-  color: gray;
+  color: rgb(181, 187, 180);
   margin:30px !important;
   margin-bottom: 60px !important;
 }
@@ -38,6 +38,8 @@
   width: 75%;
   height: 50%;
   margin: 40px;
+  filter: brightness(0) invert(1);
+
 }
 .timer {
   display: flex;

@@ -16,6 +16,7 @@ import "./App.css";
 // import ImageSlide from "./components/ImageSlide";
 import WeddingGallery from "./components/WeddingGallery";
 import WeddingInvitationDownloadSection from "./components/InvitationDownloadSection";
+import Galaxy from "./components/Backround/Gallaxy";
 
 function App() {
   const audioRef = useRef(null);
@@ -120,24 +121,50 @@ function App() {
       )}
 
       {!showModal && isUnwrapped && (
-        <>
+            <div style={{ position: "relative", minHeight: "100vh" }}>
+      
+      {/* Background Galaxy */}
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: "none"
+        }}
+      >
+        <Galaxy
+  density={0.9}
+  glowIntensity={0.35}
+  saturation={0.6}
+  hueShift={280}
+  speed={0.6}
+  twinkleIntensity={0.4}
+  rotationSpeed={0.05}
+  mouseRepulsion={false}
+  transparent={true}
+/>
+      </div>
+
+      {/* Your existing website content */}
+      <div style={{ position: "relative", zIndex: 1 }}>
           <Header showConfetti={showConfetti} />
           <CoupleSection />
           <Quickball />
           <CountdownTimer />
           <EventDetails />
+          <WeddingGallery/>
           {/* <Gallery /> */}
           <WeddingInvitationDownloadSection
   pdfUrl="/inviatation.jpeg"
   coupleNames="Manoj & Anjushree"
   weddingDate="12 December 2026"
 />
-          <WeddingGallery/>
           <MapSection />
           {/* <ImageSlide/> */}
           <Footer2 />
           <Footer />
-        </>
+        </div>
+        </div>
       )}
     </div>
   );

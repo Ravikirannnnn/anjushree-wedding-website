@@ -1,13 +1,13 @@
 body {
   font-family: "Poppins", sans-serif;
-  background:  #e9e1ff;
+  background:  #000000;
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3 {
   text-align: center;
-  color:   #0b1f5b;
+  color:   #ffffff;
 }
 /*  */
 section {
